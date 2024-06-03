@@ -1,0 +1,141 @@
+/* Restablecer estilos predeterminados */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: 'Roboto', sans-serif; /* Cambiado el tipo de letra */
+  background-color: #000000; /* Cambiado a negro */
+  color: #23145B; /* Azul oscuro */
+}
+
+/* Definir colores personalizados */
+:root {
+  --dark: #1D1B1B; /* Negro */
+  --darkblue: #3066BE; /* Azul oscuro */
+  --blue: #4A90E2; /* Azul */
+  --greenblue: #00BFB2; /* Verde azulado */
+  --skyblue: #7AE7C7; /* Celeste claro */
+}
+
+/* Contenedor principal del sitio web */
+.site-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  row-gap: 4%;
+  background-color: #000000; /* Cambia el color de fondo a negro */
+  padding: 3vh 0;
+}
+
+/* Título del sitio web */
+.mytitle {
+  background-color: var(--greenblue);
+  font-size: 300%; /* Aumenta el tamaño del texto */
+  border-radius: 12px;
+  color: white;
+  padding: 2.5%; /* Aumenta el espacio alrededor del texto */
+}
+
+/* Área de contenido */
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2vh;
+  width: 80%; /* Aumenta el ancho del área de contenido */
+  background-color: white; /* Cambia el color de fondo a blanco */
+  padding: 3%; /* Aumenta el espacio alrededor del contenido */
+  border-radius: 20px; /* Agrega bordes redondeados al contenido */
+}
+
+/* Etiquetas dentro del área de contenido */
+.content label {
+  color: #23145B; /* Cambia el color del texto a azul oscuro */
+  font-size: 130%; /* Aumenta el tamaño del texto */
+  font-weight: bold; /* Hace el texto en negrita */
+}
+
+/* Contenedor para la respuesta */
+.answer {
+  background-color: #F0FFFF; /* Cambia el color de fondo a un celeste muy claro */
+  border-radius: 20px; /* Agrega bordes redondeados al contenido */
+  padding: 2%; /* Aumenta el espacio alrededor del contenido */
+  overflow-y: auto;
+}
+
+/* Tabla */
+table {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  border: solid 10px none;
+}
+
+/* Encabezados de tabla */
+table th {
+  background-color: var(--dark); /* Cambia el color de fondo del encabezado de tabla a azul oscuro */
+  color: white;
+  padding: 15px; /* Aumenta el espacio alrededor del texto */
+}
+
+/* Datos de la tabla */
+table td {
+  background-color: #E0F5FD; /* Cambia el color de fondo a un celeste claro */
+  color: #23145B; /* Cambia el color del texto a azul oscuro */
+  padding: 15px; /* Aumenta el espacio alrededor del texto */
+}
+
+/* Contenedor para campos de entrada */
+.myinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centra los elementos verticalmente */
+  column-gap: 2%;
+  border-radius: 60%;
+  justify-content: space-between;
+  width: 100%; /* Ajusta el ancho del contenedor al 100% */
+  margin-top: 3vh; /* Agrega espacio arriba del contenedor */
+}
+
+/* Elementos de selección (dropdown) */
+.myinput select {
+  width: 40%;
+  border-radius: 50em; /* Hace los bordes del select redondeados */
+  padding: 1.5%; /* Aumenta el espacio alrededor del texto */
+  background-color: #F0FFFF; /* Cambia el color de fondo a un celeste muy claro */
+  color: #23145B; /* Cambia el color del texto a azul oscuro */
+  font-size: 110%; /* Aumenta el tamaño del texto */
+  cursor: pointer;
+}
+
+/* Campos de entrada de texto */
+.myinput input {
+  background-color: #F0FFFF; /* Cambia el color de fondo a un celeste muy claro */
+  border-radius: 20px; /* Hace los bordes del input redondeados */
+  border: 2px solid #23145B; /* Borde sólido de color azul oscuro */
+  width: 50%;
+  padding: 12px; /* Aumenta el espacio alrededor del texto */
+  color: #23145B; /* Cambia el color del texto a azul oscuro */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Botones generales */
+input {
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 12px 24px; /* Aumenta el espacio alrededor del texto */
+  color: white;
+  font-size: 18px; /* Aumenta el tamaño del texto */
+  cursor: pointer;
+}
+
+/* Botón de retroceso */
+.back {
+  background-color: var(--blue);
+  border-radius: 20px;
